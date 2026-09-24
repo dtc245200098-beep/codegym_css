@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thực hành Danh sách trong CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    /* 1. Thuộc tính list-style-type */
+    ul.a { list-style-type: circle; }
+    ul.b { list-style-type: square; }
+    ul.c { list-style-type: none; }
+    ol.d { list-style-type: upper-roman; }
+    ol.e { list-style-type: lower-alpha; }
+
+    /* 2. Thuộc tính list-style-position */
+    ul.inside { list-style-position: inside; }
+    ul.outside { list-style-position: outside; }
+
+    /* 3. Thuộc tính rút gọn list-style */
+    ul.shorthand {
+      list-style: square inside;
+    }
+
+    /* 4. Định kiểu danh sách với màu sắc */
+    ol.colored-list {
+      background: #ffe6e6;
+      color: red; /* Đổi màu số đánh dấu */
+      padding: 20px;
+    }
+    ol.colored-list li {
+      background: #ffffff;
+      color: #333333; /* Đổi màu chữ nội dung */
+      margin: 5px 0;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Thực hành các thuộc tính Danh sách trong CSS</h1>
+
+  <h2>1. Kiểu đánh dấu (list-style-type)</h2>
+  <ul class="a">
+    <li>Mục tròn rỗng (circle)</li>
+    <li>Mục tròn rỗng</li>
+  </ul>
+  <ul class="b">
+    <li>Mục hình vuông (square)</li>
+    <li>Mục hình vuông</li>
+  </ul>
+  <ol class="d">
+    <li>Số La Mã hoa (upper-roman)</li>
+    <li>Số La Mã hoa</li>
+  </ol>
+  <ol class="e">
+    <li>Chữ cái thường (lower-alpha)</li>
+    <li>Chữ cái thường</li>
+  </ol>
+
+  <h2>2. Vị trí đánh dấu (list-style-position)</h2>
+  <h3>Inside:</h3>
+  <ul class="inside">
+    <li>Mục bên trong (inside) - Khi văn bản dài xuống dòng, nó sẽ thụt lề thẳng với dấu đầu dòng.</li>
+  </ul>
+  <h3>Outside:</h3>
+  <ul class="outside">
+    <li>Mục bên ngoài (outside) - Khi văn bản dài xuống dòng, nó sẽ nằm thẳng hàng với dòng chữ đầu tiên.</li>
+  </ul>
+
+  <h2>3. Thuộc tính rút gọn (list-style)</h2>
+  <ul class="shorthand">
+    <li>Danh sách kết hợp kiểu và vị trí trong 1 dòng lệnh CSS</li>
+  </ul>
+
+  <h2>4. Danh sách có màu sắc</h2>
+  <ol class="colored-list">
+    <li>Mục thứ nhất với màu sắc tùy chỉnh</li>
+    <li>Mục thứ hai với màu sắc tùy chỉnh</li>
+    <li>Mục thứ ba với màu sắc tùy chỉnh</li>
+  </ol>
+
+</body>
+</html>
