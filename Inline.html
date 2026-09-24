@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành Nhúng CSS</title>
+
+    <!-- 2. INTERNAL CSS -->
+    <style>
+        .internal-title {
+            color: crimson;
+        }
+        .internal-text {
+            color: darkorange;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PHẦN 1: INLINE CSS -->
+    <section>
+        <h1 style="color: blue;">1. Tiêu đề (Inline CSS)</h1>
+        <p style="color: green;">Đoạn văn đổi màu bằng Inline CSS.</p>
+    </section>
+
+    <hr>
+
+    <!-- PHẦN 2: INTERNAL CSS -->
+    <section>
+        <h1 class="internal-title">2. Tiêu đề (Internal CSS)</h1>
+        <p class="internal-text">Đoạn văn đổi màu bằng Internal CSS.</p>
+    </section>
+
+    <hr>
+
+    <!-- PHẦN 3: EXTERNAL CSS (Mô phỏng qua style riêng) -->
+    <section>
+        <h1 style="color: purple;">3. Tiêu đề (External CSS)</h1>
+        <p style="color: teal;">Đoạn văn đổi màu bằng External CSS (liên kết qua thẻ &lt;link&gt;).</p>
+    </section>
+
+</body>
+</html>
