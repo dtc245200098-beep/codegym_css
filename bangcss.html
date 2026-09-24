@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thực hành Định kiểu Bảng trong CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* 1, 2, 3. Đường viền, gộp đường viền & kích thước bảng */
+    table {
+      width: 100%;                  /* Chiều rộng bảng 100% */
+      border: 1px solid black;      /* Đường viền cho bảng */
+      border-collapse: collapse;    /* Gộp đường viền đôi thành đường viền đơn */
+    }
+
+    /* Định kiểu chung cho các ô tiêu đề (th) và ô dữ liệu (td) */
+    th, td {
+      border: 1px solid black;      /* Đường viền cho từng ô */
+      padding: 12px;                /* Padding: khoảng cách giữa đường viền và nội dung */
+    }
+
+    /* 3. Chiều cao cho phần tử th */
+    th {
+      height: 50px;
+      
+      /* 4. Căn chỉnh theo chiều ngang (text-align) */
+      text-align: left;             /* Căn trái nội dung tiêu đề (mặc định là center) */
+      
+      /* 6. Màu sắc trong bảng */
+      background-color: #04AA6D;    /* Màu nền tiêu đề */
+      color: white;                 /* Màu chữ tiêu đề */
+    }
+
+    /* 5. Căn chỉnh theo chiều dọc (vertical-align) */
+    td {
+      height: 60px;
+      vertical-align: bottom;       /* Căn nội dung xuống đáy ô (mặc định là middle) */
+    }
+
+    /* Tạo màu nền xe kẽ cho các hàng (giúp bảng dễ nhìn hơn) */
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Bài thực hành: Định kiểu cho Bảng (Table CSS)</h2>
+
+  <table>
+    <tr>
+      <th>Họ và tên</th>
+      <th>Chức vụ</th>
+      <th>Thành phố</th>
+    </tr>
+    <tr>
+      <td>Nguyễn Văn A</td>
+      <td>Lập trình viên</td>
+      <td>Hà Nội</td>
+    </tr>
+    <tr>
+      <td>Trần Thị B</td>
+      <td>Thiết kế UI/UX</td>
+      <td>Đà Nẵng</td>
+    </tr>
+    <tr>
+      <td>Lê Văn C</td>
+      <td>Quản lý dự án</td>
+      <td>TP. Hồ Chí Minh</td>
+    </tr>
+  </table>
+
+</body>
+</html>
